@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Panel</title>
+	<link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+
+
+</head>
+<body>
+	<div class="header_bar">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2 col-sm-2">
+					<a href=""><i class="fas fa-book-open home_icon"></i></a>
+				</div>
+				<div class="col-md-10 col-sm-10">
+
+					<div class="dropdown">
+					  <button onclick="myFunction()" class="dropbtn"><i class="fas fa-user-alt logout_font"></i>
+					  </button>
+					  <div id="myDropdown" class="dropdown-content">
+					    <a href="#">Logout</a>
+					   
+					  </div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+	<div class="asidebar">
+		<ul class="asidebar_menubar">
+			<li><a href="#"><i class="fas fa-chalkboard-teacher"></i> Teachers</a></li>
+			<li><a href="#"><i class="fas fa-user-graduate"></i> Students</a></li>
+			<li><a href="#"><i class="fas fa-chalkboard"></i> Attendance</a></li>
+			<li><a href="#"><i class="fas fa-bible"></i> Classes</a></li>
+		</ul>
+	</div>
+	<div class="body_content">
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					1
+				</div>
+				<div class="col-md-4">
+					2
+				</div>
+				<div class="col-md-4">
+					3
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	
+
+
+
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js.custom.js"></script>
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</body>
+</html>
